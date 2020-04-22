@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindBalanceElementTask", "FindBalanceElementTask\FindBalanceElementTask.csproj", "{067541AC-25B2-4ACC-92B3-7ABCE52A80D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindBalanceElementTask.Tests", "FindBalanceElementTask.Tests\FindBalanceElementTask.Tests.csproj", "{D5068432-D421-412B-BA46-A330D995B22D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{067541AC-25B2-4ACC-92B3-7ABCE52A80D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{067541AC-25B2-4ACC-92B3-7ABCE52A80D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{067541AC-25B2-4ACC-92B3-7ABCE52A80D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{067541AC-25B2-4ACC-92B3-7ABCE52A80D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5068432-D421-412B-BA46-A330D995B22D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5068432-D421-412B-BA46-A330D995B22D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5068432-D421-412B-BA46-A330D995B22D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5068432-D421-412B-BA46-A330D995B22D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
