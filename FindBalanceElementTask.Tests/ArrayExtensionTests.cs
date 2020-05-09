@@ -24,7 +24,7 @@ namespace FindBalanceElementTask.Tests
         [TestCase(new int[] { int.MaxValue, 10, int.MaxValue, int.MaxValue, 50 }, ExpectedResult = null)]
         [TestCase(new int[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 }, ExpectedResult = null)]
         [TestCase(new int[] { 1, 2, 1, 50000 }, ExpectedResult = null)]
-        public int? FindBalanceElement_Returns_Null(int[] array)
+        public int? FindBalanceElement_Return_Null(int[] array)
             => ArrayExtension.FindBalanceElement(array);
 
         [Test]
