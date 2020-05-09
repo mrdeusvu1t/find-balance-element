@@ -15,7 +15,7 @@ namespace FindBalanceElementTask.Tests
         [TestCase(new int[] { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 }, ExpectedResult = 5)]
         [TestCase(new int[] { 0, 0, 0 }, ExpectedResult = 1)]
         [TestCase(new int[] { int.MinValue, int.MinValue, 50, int.MinValue, int.MinValue }, ExpectedResult = 2)]
-        public int FindBalanceElement_Returns_Index_Of_Balance_Element(int[] array) => 
+        public int FindBalanceElement_Return_IndexOfBalanceElement(int[] array) => 
             ArrayExtension.FindBalanceElement(array).Value;
 
         [TestCase(new int[] { 0, 50 }, ExpectedResult = null)]
@@ -28,11 +28,11 @@ namespace FindBalanceElementTask.Tests
             => ArrayExtension.FindBalanceElement(array);
 
         [Test]
-        public void FindBalanceElement_Throw_ArgumentNullException_If_Array_Is_Null() =>
+        public void FindBalanceElement_ArrayIsNull_ThrowArgumentNullException() =>
             Assert.Throws<ArgumentNullException>(() => ArrayExtension.FindBalanceElement(null),
                 message: "Array can not be null.");
         [Test]
-        public void FindBalanceElement_Throw_ArgumentException_If_Array_Is_Empty() =>
+        public void FindBalanceElement_ArrayIsEmpty_ThrowArgumentException() =>
             Assert.Throws<ArgumentException>(() => ArrayExtension.FindBalanceElement(new int[] { }),
                 message: "Array can not be empty.");
     }
