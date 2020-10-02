@@ -1,6 +1,8 @@
 using System;
 using NUnit.Framework;
 
+#pragma warning disable CA1707
+
 namespace FindBalanceElementTask.Tests
 {
     public class ArrayExtensionTests
@@ -24,16 +26,16 @@ namespace FindBalanceElementTask.Tests
         [TestCase(new int[] { int.MaxValue, 10, int.MaxValue, int.MaxValue, 50 }, ExpectedResult = null)]
         [TestCase(new int[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 }, ExpectedResult = null)]
         [TestCase(new int[] { 1, 2, 1, 50000 }, ExpectedResult = null)]
+        [TestCase(new int[] { -1, int.MinValue, 5, int.MaxValue }, ExpectedResult = null)]
         public int? FindBalanceElement_Return_Null(int[] array)
             => ArrayExtension.FindBalanceElement(array);
 
         [Test]
         public void FindBalanceElement_ArrayIsNull_ThrowArgumentNullException() =>
-            Assert.Throws<ArgumentNullException>(() => ArrayExtension.FindBalanceElement(null),
-                message: "Array can not be null.");
+            Assert.Throws<ArgumentNullException>(() => ArrayExtension.FindBalanceElement(null), message: "Array can not be null.");
+
         [Test]
         public void FindBalanceElement_ArrayIsEmpty_ThrowArgumentException() =>
-            Assert.Throws<ArgumentException>(() => ArrayExtension.FindBalanceElement(new int[] { }),
-                message: "Array can not be empty.");
+            Assert.Throws<ArgumentException>(() => ArrayExtension.FindBalanceElement(Array.Empty<int>()), message: "Array can not be empty.");
     }
 }

@@ -1,9 +1,9 @@
-﻿using System;
+using System;
 
 namespace FindBalanceElementTask
 {
     /// <summary>
-    /// Class for operations with array.
+    /// Class for operations with arrays.
     /// </summary>
     public static class ArrayExtension
     {
@@ -13,11 +13,11 @@ namespace FindBalanceElementTask
         /// </summary>
         /// <param name="array">Source array.</param>
         /// <returns>The index of the balance element, if it exists, and null otherwise.</returns>
-        /// <exception cref="ArgumentNullException">Thrown when array is null.</exception>
-        /// <exception cref="ArgumentException">Thrown when array is empty.</exception>
+        /// <exception cref="ArgumentNullException">Thrown when source array is null.</exception>
+        /// <exception cref="ArgumentException">Thrown when source array is empty.</exception>
         public static int? FindBalanceElement(int[] array)
         {
-            throw new NotImplementedException("You need to implement this function.");
+            throw new NotImplementedException("You need to implement this method.");
         }
     }
 }
